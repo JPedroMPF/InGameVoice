@@ -1,0 +1,67 @@
+{
+	"root":
+		{
+			"classId": 0,
+			"Description": null,
+			"AppraisalRules":
+				{
+					"AppraisalWeight": 1,
+					"Rules": [
+						{
+							"EventName": "Event(Action-End, Player, Speak(*, *, Praise([i]), *), SELF)",
+							"Conditions":
+								{
+									"Set": ["Likes([i]) = True"]
+								},
+							"AppraisalVariables":
+								{
+									"AppraisalVariables": [
+										{
+											"Name": "Desirability",
+											"Value": -2,
+											"Target": "-"
+										}]
+								}
+						}, 
+						{
+							"EventName": "Event(Action-End, Player, Speak(*, *, Praise([i]), *), SELF)",
+							"Conditions":
+								{
+									"Set": ["Likes([i]) = True"]
+								},
+							"AppraisalVariables":
+								{
+									"AppraisalVariables": [
+										{
+											"Name": "Desirability",
+											"Value": 2,
+											"Target": "-"
+										}]
+								}
+						}, 
+						{
+							"EventName": "Event(Action-Start, Player, Agree([x]), SELF)",
+							"Conditions":
+								{
+									"Set": ["SELF = [x]"]
+								},
+							"AppraisalVariables":
+								{
+									"AppraisalVariables": []
+								}
+						}]
+				},
+			"EmotionDispositions": [
+				{
+					"Emotion": "*",
+					"Decay": 1,
+					"Threshold": 1
+				}],
+			"Goals": []
+		},
+	"types": [
+		{
+			"TypeId": 0,
+			"ClassName": "EmotionalAppraisal.EmotionalAppraisalAsset, EmotionalAppraisal, Version=1.4.1.0, Culture=neutral, PublicKeyToken=null"
+		}]
+}

@@ -1,0 +1,2 @@
+\LostBarOwner\TheLostBarOwner.iat
+	TheLostBarOwner

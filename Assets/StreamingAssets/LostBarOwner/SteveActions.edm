@@ -1,0 +1,62 @@
+{
+	"root":
+		{
+			"classId": 0,
+			"ActionTendencies": [
+				{
+					"Action": "Drink",
+					"Target": "-",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["Agree([x]) = True"]
+						},
+					"Priority": 1
+				}, 
+				{
+					"Action": "Insult",
+					"Target": "[x]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["Disagree([x]) = True", "StrongestEmotion(SELF) = Anger", "IsAgent([x]) = True"]
+						},
+					"Priority": 2
+				}, 
+				{
+					"Action": "Speak([cs], [ns], [m], Angry)",
+					"Target": "Player",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["ValidDialogue([cs], [ns], [m], Angry) = True", "Dialogo([x]) = [cs]", "Mood(SELF) < 0"]
+						},
+					"Priority": 5
+				}, 
+				{
+					"Action": "Disconnect",
+					"Target": "-",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["DialogueState(Player) = End"]
+						},
+					"Priority": 1
+				}, 
+				{
+					"Action": "Speak([cs], [ns], [m], [s])",
+					"Target": "Player",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["ValidDialogue([cs], [ns], [m], [s]) = True", "Dialogo([x]) = [cs]"]
+						},
+					"Priority": 4
+				}]
+		},
+	"types": [
+		{
+			"TypeId": 0,
+			"ClassName": "EmotionalDecisionMaking.EmotionalDecisionMakingAsset, EmotionalDecisionMaking, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null"
+		}]
+}

@@ -1,0 +1,120 @@
+{
+	"root":
+		{
+			"classId": 0,
+			"ScenarioName": "Save the tabern owner",
+			"Description": "A conversation between the player and bartender Steve. Steve doesn't know where the bar owner is, and he will take over the bar if he doesn't return in the meantime.",
+			"WorldModelSource": "WesternWorldModel.wmo",
+			"CharacterSources": ["Steve.rpc", "Player.rpc"],
+			"Dialogues": [
+				{
+					"CurrentState": "P1",
+					"NextState": "S1",
+					"Meaning": "Talk",
+					"Style": "Normal",
+					"Utterance": "I'l have a old bourbon",
+					"UtteranceId": "TTS-881BF3E9773D860625E4AE5FD97D41A3"
+				}, 
+				{
+					"CurrentState": "P2",
+					"NextState": "S4",
+					"Meaning": "-",
+					"Style": "-",
+					"Utterance": "Just wondering about looking for a job that might appear",
+					"UtteranceId": "TTS-AAE4C3441AC270B9D6C82CB04BE25689"
+				}, 
+				{
+					"CurrentState": "S4",
+					"NextState": "-",
+					"Meaning": "-",
+					"Style": "Angry",
+					"Utterance": "No, Fast Jack has been away for so long that i own this bar now",
+					"UtteranceId": "TTS-B7E1C92FDB24F2FCB17347BFC9A8A59A"
+				}, 
+				{
+					"CurrentState": "S5",
+					"NextState": "-",
+					"Meaning": "-",
+					"Style": "-",
+					"Utterance": "You can search for him, but i think you won't find him.",
+					"UtteranceId": "TTS-829E9C89C5D192930D9441C6BC6EDCBE"
+				}, 
+				{
+					"CurrentState": "P5",
+					"NextState": "-",
+					"Meaning": "-",
+					"Style": "-",
+					"Utterance": "I can find anything for the right reason, if you feel me.",
+					"UtteranceId": "TTS-BC3402323178CA9A6321CAA87D784E17"
+				}, 
+				{
+					"CurrentState": "S3",
+					"NextState": "-",
+					"Meaning": "-",
+					"Style": "Proud",
+					"Utterance": "What you think about my bar?",
+					"UtteranceId": "TTS-FD08B13FBDEBB267A864276E87730BCB"
+				}, 
+				{
+					"CurrentState": "P3",
+					"NextState": "-",
+					"Meaning": "Praise(Benfica)",
+					"Style": "-",
+					"Utterance": "ehn! fast jack just make booze cheaper. He's still the owner right?",
+					"UtteranceId": "TTS-37373E599BFC2CA4734E3A22BC84AB66"
+				}, 
+				{
+					"CurrentState": "P3",
+					"NextState": "-",
+					"Meaning": "-",
+					"Style": "-",
+					"Utterance": "Nice place, fast jack did great shit with this place! He's still the owner right?",
+					"UtteranceId": "TTS-FE19EF150DFA7D0EFCBC0A6FCC52AECA"
+				}, 
+				{
+					"CurrentState": "P4",
+					"NextState": "-",
+					"Meaning": "-",
+					"Style": "-",
+					"Utterance": "That's true! Wonder in wich county are the ladies runing away",
+					"UtteranceId": "TTS-C1F50FD66D216133144993E9AB0835CD"
+				}, 
+				{
+					"CurrentState": "S6",
+					"NextState": "-",
+					"Meaning": "-",
+					"Style": "-",
+					"Utterance": "I got a offer for you, if you find him, and make shure no one else does. I might have some connections i can present you to.",
+					"UtteranceId": "TTS-18D921E1A3E653CF5EB0DBC3FE771946"
+				}, 
+				{
+					"CurrentState": "Start",
+					"NextState": "P1",
+					"Meaning": "Greating",
+					"Style": "Polite",
+					"Utterance": "Hi gentleman what can i serve you?",
+					"UtteranceId": "TTS-C37C73D03BBB3EBFD506DE48F4ADF492"
+				}, 
+				{
+					"CurrentState": "S1",
+					"NextState": "P2",
+					"Meaning": "-",
+					"Style": "-",
+					"Utterance": "What bring you to this place?",
+					"UtteranceId": "TTS-2CF1E34D2425A992D9A6D432FF4C2D87"
+				}, 
+				{
+					"CurrentState": "S4",
+					"NextState": "-",
+					"Meaning": "-",
+					"Style": "Happy",
+					"Utterance": "No, That's ok",
+					"UtteranceId": "TTS-D208615059B625075339507828798FD4"
+				}]
+		},
+	"types": [
+		{
+			"TypeId": 0,
+			"ClassName": "IntegratedAuthoringTool.IntegratedAuthoringToolAsset, IntegratedAuthoringTool, Version=1.7.0.0, Culture=neutral, PublicKeyToken=null"
+		}]
+}
